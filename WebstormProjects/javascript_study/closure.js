@@ -1,6 +1,6 @@
-// function HelloFunc(func) {
-//     this.greeting = "hello";
-// }
+function HelloFunc(func) {
+     this.greeting = "hello";
+}
 //
 // HelloFunc.prototype.call = function(func) {
 //     func ? func(this.greeting) : this.func(this.greeting);
