@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>HTMLColletion and NodeList and jQuery</title>
-    <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 <body>
     <h1>HTMLColletion and NodeList and jQuery</h1>
@@ -19,16 +16,17 @@
     접근 속도는 htmlCollection이 제일 빠름. 좀더 복잡한 일을 하고 싶을 경우 nodelist나 jquery 사용.
      */
 
-//    $(function () {
-//        var a = document.getElementsByTagName("h1");
-//        console.log(a);
-//
-//        var b = document.querySelectorAll("h1");
-//        console.log(b);
-//
-//        var c = $("h2");
-//        console.log(c);
-//    })
+    $(function () {
+        var a = document.getElementsByTagName("h1");
+        console.log(a);
+
+        var b = document.querySelectorAll("h1");
+        console.log(b);
+
+        var c = $("h2");
+        console.log(c);
+    });
+
     var divs_getElement = document.getElementsByTagName("div"),
         div_querySelect = document.querySelectorAll("div"),
         div_jquery = $("div"),
